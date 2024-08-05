@@ -1,0 +1,8 @@
+smmap==5.0.1
+gitdb==4.0.11
+GitPython==3.1.43
+graphviz==0.20.3
+Jinja2==3.1.4
+MarkupSafe==2.1.5
+pyjokes==0.6.0
+smmap==5.0.1
