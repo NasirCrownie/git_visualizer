@@ -64,11 +64,11 @@ def add_branches(repo, graph, branches, color_map):
       elif (node_in_graph(graph, node_message) and prev_node == None): #If node in graph and is prev node
         prev_node = node_message
       elif (not node_in_graph(graph, node_message) and prev_node != None): #If node not in graph and no prev node
-        graph.node(node_message, style="filled", id=f"{commit}", shape="circle")
+        graph.node(node_message, style="filled", id=f"{commit}", shape="circle", width='5.0', height='5.0', fixedsize='true')
         graph.edge(prev_node, node_message, color=color_map[branch])
         prev_node = node_message
       elif (not node_in_graph(graph, node_message) and prev_node == None): #If node not in graph and is prev node
-        graph.node(node_message, style="filled", id=f"{commit}", shape="circle")
+        graph.node(node_message, style="filled", id=f"{commit}", shape="circle", width='5.0', height='5.0', fixedsize='true')
         prev_node = node_message
 
     #Add branch ender 
